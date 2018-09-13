@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TO-DO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/js/main.js"></script>
+</head>
+<head>
+
+
+</head>
+
+<body>
+<!--main navigation-->
+<header class = "top-bar js-top-bar  _fixed top-bar">
+            <nav> <logo></logo><img src="assets/images/todo.png" alt="" height="100"></logo>
+                    <ul style="float:right;">
+                        <li class ="active"><a>Home</a></li>
+                      
+                    </ul>
+                </nav>                
+
+
+</header>
+                <div class="intro">
+                <h2>TO-DO</h2>
+                <h1>Manage your tasks</h1>
+                </div>
+
+            <div class ="container" id="SignIn">
+                    <div class="left">
+                        <img src="assets/images/clean.jpg">
+                    </div>
+                    <div class="right">                    
+                    <div class="formBox">
+                        <form>
+                            <p>Username</p>
+                            <input type ="text" name="" placeholder="Username">
+                            <p>Password</p>
+                            <input type="Password" name="" placeholder="******">
+                            <br>
+                   
+                            <a href="user.html" id="login">Sign In</a>
+                            
+                        </form>
+                        </div>
+                     </div>
+                     <div>
+                            <button onclick="show('SignUp');" id="new">I'm New</button>
+                        </div>
+            </div>
+            <div class="container" id="SignUp">
+            <div class="left"><img src="assets/images/clean.jpg"></div>
+            <div class="right">
+                <div class="formBox">
+                <form class="signup" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="username" id="name" class="name">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address </label>
+                        <input type="text" placeholder="emailAddress" id="email" class="email">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="*********" class="pass">
+                        <span class="error"></span>
+                    </div>
+                        <button type="submit" value="Signup Now" id="submit" onclick="singupAlert()">Signup</button>
+                
+             </form>
+             </div>
+             </div>
+             </div>
+             </div>
+             
