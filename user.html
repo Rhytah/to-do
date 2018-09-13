@@ -6,12 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>User|TO-DO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/todo.css">
+    <script src="assets/js/main.js"></script>
+
+    <style>
+    body {
+        background-image:url("assets/images/coffeecup.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }</style> 
 </head>
 <body>
-    <img src="clean.jpg" >
+    <div id="todoadd1" class="header">
+        <img src="assets/images/logoRetina.png" height="80">
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+        
+        <ul id="todolist">
+        <li >Join Andela 35
+        <span class="close">x</span>
+        </li>
+        <li>
+            Start on challenge
+        <span class="close">x</span></li>
+        <li>Meet Facilitator
+        <span class="close">x</span>   
+        </li>
+        </ul>
 
-    <blockquote>Under construction</blockquote>
+    <!-- another to-do list -->
+    <button  onclick="show('todoadd2');">Create a new list</button>
+    
+    <div id="todoadd2">
+    <div id="todoadd" class="header" >
+        
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+            
+        <ul id="todolist">
+        <li >Get to bootcamp
+        <span class="close">x</span>
+        </li>
+        <li> TDD
+        <span class="close">x</span></li>
+        <li>Connect databases
+        <span class="close">x</span>   
+        </li>
+        </ul>
+        <button name="createnewlist" onclick="show('todoadd2');" >Create a new list</button>
+    </div>
+    <a href="index.html" style="float:right;"> Done</a>
+
+
 </body>
 </html>

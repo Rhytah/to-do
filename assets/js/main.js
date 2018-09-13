@@ -1,4 +1,4 @@
-            
+//show signup when button is clicked            
 function show(id) {
 var e = document.getElementById(id);
 if(e.style.display == 'none')
@@ -6,6 +6,7 @@ e.style.display = 'block';
 else
 e.style.display = 'none';
 }
+//signup message 
 function singupAlert(){
     alert("Sign up successful");
 }
@@ -13,4 +14,38 @@ function singupAlert(){
 function sform(a) {
     if (a == 1)
         document.getElementById("SignUp").style.display = "block";
+}
+
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("todolist").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+//button clicked to add a new list            
+function addlist(a) {
+  if (a == 1)
+      document.getElementById("todoadd2").style.display = "block";
 }

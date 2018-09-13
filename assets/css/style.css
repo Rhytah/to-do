@@ -2,7 +2,6 @@ body
 {
     margin: 0 auto;
     padding: 2px  8px;
-    background:url(clean.jpg);
     background-size: cover;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -31,11 +30,13 @@ h1
 }
 
 /*header*/
-header
+header 
 {
     background: rgb(17, 94, 71);
     width:100%;
     height: 100px;
+    text-align: center;
+   
 }
 header .header-brand{
     font-family:  sans-serif;
@@ -270,3 +271,5 @@ form input
     padding: 4px;
 
 }
+
+
