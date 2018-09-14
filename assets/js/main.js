@@ -6,6 +6,15 @@ e.style.display = 'block';
 else
 e.style.display = 'none';
 }
+//hide login
+function hide(id) {
+  var d = document.getElementById(id);
+  if(d.style.display == 'block')
+  d.style.display ='none';
+  else
+  d.style.display='block';
+}
+
 //signup message 
 function singupAlert(){
     alert("Sign up successful");
@@ -25,6 +34,16 @@ for (i = 0; i < myNodelist.length; i++) {
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
 
 // Add a "checked" symbol when clicking on a list item
@@ -61,10 +80,8 @@ function newElement() {
     }
   }
 }
-
 //button clicked to add a new list            
 function addlist(a) {
   if (a == 1)
-      document.getElementById("todoadd2").style.display = "block";
+      document.getElementById("todoadd").style.display = "block";
 }
-
