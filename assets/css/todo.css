@@ -126,3 +126,9 @@ input {
 #todoadd2{
   display: none;
 }
+.panel{
+  width: 50%;
+  height: fit-content;
+  align-self: center;
+  margin: 40px 400px;
+}
