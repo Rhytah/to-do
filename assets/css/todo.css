@@ -1,11 +1,7 @@
 body {
   margin: 0;
   min-width: 250px;
-/*  background-image:url("/assets/images/coffeecup.jpg");*/
-  background-image: url("../../assets/images/coffeecup.jpg");
-  position: absolute;
-  background-size: cover;
-  
+
 }
 
 
