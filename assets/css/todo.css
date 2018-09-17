@@ -55,8 +55,10 @@ ul li.checked {
   text-decoration: line-through;
 }
 
+
 /*Add a "checked" mark when clicked on */
 ul#todolist li.checked::before { 
+
   content: '';
   position: absolute;
   border-color: goldenrod;
