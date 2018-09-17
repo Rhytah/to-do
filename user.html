@@ -10,32 +10,24 @@
     <link rel="stylesheet" type="text/css" href="assets/css/todo.css">
     <script src="assets/js/main.js"></script>
 
-    <style>
-    body {
-        background-image:url("assets/images/coffeecup.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }</style> 
+    
 </head>
 <body>
+    <div class="panel">
     <div id="todoadd1" class="header">
         <img src="assets/images/logoRetina.png" height="80">
         <input type="text" id="myInput" placeholder="Title...">
         <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-        
         <ul id="todolist">
-        <li >Join Andela 35
-        <span class="close">x</span>
+        <li>Do something new
         </li>
-        <li>
-            Start on challenge
-        <span class="close">x</span></li>
-        <li>Meet Facilitator
-        <span class="close">x</span>   
-        </li>
+      
         </ul>
-
+   
+                
+ 
+        
     <!-- another to-do list -->
     <button  onclick="show('todoadd2');">Create a new list</button>
     
@@ -48,18 +40,12 @@
             
         <ul id="todolist">
         <li >Get to bootcamp
-        <span class="close">x</span>
-        </li>
-        <li> TDD
-        <span class="close">x</span></li>
-        <li>Connect databases
-        <span class="close">x</span>   
-        </li>
+       </li>
         </ul>
         <button name="createnewlist" onclick="show('todoadd2');" >Create a new list</button>
     </div>
     <a href="index.html" style="float:right;"> Done</a>
-
+</div>
 
 </body>
 </html>

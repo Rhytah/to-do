@@ -1,8 +1,13 @@
 body {
   margin: 0;
   min-width: 250px;
+/*  background-image:url("/assets/images/coffeecup.jpg");*/
+  background-image: url("../../assets/images/coffeecup.jpg");
+  position: absolute;
+  background-size: cover;
   
 }
+
 
 /* Include the padding and border in an element's total width and height */
 * {
@@ -43,14 +48,15 @@ ul li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
+
 ul li.checked {
   background: rgba(12, 95, 63, 0.521)(136, 136, 136, 0.521);
   color: rgba(13, 92, 49, 0.747);
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
+/*Add a "checked" mark when clicked on */
+ul#todolist li.checked::before { 
   content: '';
   position: absolute;
   border-color: goldenrod;
@@ -74,6 +80,7 @@ ul li.checked::before {
 .close:hover {
   background-color: rgb(17, 94, 71);
   color: white;
+
 }
 
 /* Style the header */
@@ -125,4 +132,10 @@ input {
 }
 #todoadd2{
   display: none;
+}
+.panel{
+  width: 50%;
+  height: fit-content;
+  align-self: center;
+  margin: 40px 400px;
 }
