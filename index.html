@@ -43,7 +43,7 @@
                         </div>
                      </div>
                      <div>
-                            <button onclick="show('SignUp');" id="new">I'm New</button>
+                            <button onclick="show('SignUp'); hide('SignIn');" id="new" >I'm New</button>
                         </div>
             </div>
             <div class="container" id="SignUp">
@@ -69,6 +69,7 @@
                         <span class="error"></span>
                     </div>
                         <button type="submit" value="Signup Now" id="submit" onclick="singupAlert()">Signup</button>
+                        <button onclick="show('SignIn');">I am already registered</button>
                 
              </form>
              </div>
