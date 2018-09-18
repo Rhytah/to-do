@@ -8,45 +8,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="assets/js/main.js"></script>
 
-    <style>
-    body {
-        background-image:url("assets/images/coffeecup.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }</style> 
+    
 </head>
 <body>
-    <div class="panel">
-    <div id="todoadd1" class="header">
-        <img src="assets/images/logoRetina.png" height="80">
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-    </div>
-        
-        <ul id="todolist">
-        <li></li>
-        </ul>
 
-    <!-- another to-do list -->
-    <button  onclick="show('todoadd2');">Create a new list</button>
-    
-    <div id="todoadd2">
-    <div id="todoadd" class="header" >
-        
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-    </div>
             
-        <ul id="todolist">
-        <li >Get to bootcamp
-       </li>
-        </ul>
-        <button name="createnewlist" onclick="show('todoadd2');" >Create a new list</button>
-    </div>
-    <a href="index.html" style="float:right;"> Done</a>
+   
+    <div class="container"> 
+        <div class="tab">
+            <button class="tablink" onclick="opentab(event, 'tododone')">Earlier lists</button>
+            <button class="tablink" onclick="opentab(event,'todos')">Active lists</button>
+            <button class="tablink" onclick="opentab(event,'todoadd1')">create a new list</button>
+
+        </div>
 </div>
+        <div class="tabcontent" id="todos">
+        <div class="left">
+                <h2>House chores</h2>
+            <table id="todotable">
+                <tr><td id="mark" onclick="mark()"> 
+                    <input type="checkbox"></td>
+                    <td>washh the dog</td>
+                    <td  onclick="del('todo');"><i class="fa fa-trash"></i></td> 
+                </tr>
+                <tr><td> <input type="checkbox"></td>
+                    <td>dance</td>
+                    <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
+                 </tr>
+                <tr><td> <input type="checkbox"></td>
+                    <td>dance</td>
+                    <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
+                </tr>
+                <tr id="todo">
+                    <td> <input type="checkbox"></td>
+                    <td>dance</td>
+                    <td  onclick="del()"><i class="fa fa-trash" ></i></td>
+                </tr>
+                
+            </table>
+        </div>
+
+        </div>
+    </div>
+    <div class="panel">
+    <div class="tabcontent" id="todoadd1">
+            <div id="todoadd1" class="header">
+                <img src="assets/images/logoRetina.png" height="80">
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+                
+                <ol id="todolist">
+                
+                <li> Pick up Refreshments</li>
+                </ol>
+            
+                </div>
+                </div>
+        <!-- another to-do list -->
+        <!-- <button  onclick="show('todoadd2');">Create a new list</button> -->
+        
+        </div>
+        <div class="tabcontent" id="tododone">
+            <ul>
+                <li><i class="fas fa-check-double"></i>Preparing dinner </li>
+                <li><i class="fas fa-check-double"></i> Weekend engagements</li>
+                <li><i class="fas fa-check-double"></i>School day</li>
+                
+            </ul>
+            </div>
+        <a href="index.html" style="float:right;"> Done</a>
+    </div>
 
 </body>
 </html>
