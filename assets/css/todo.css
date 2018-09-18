@@ -1,10 +1,13 @@
 body {
   margin: 0;
   min-width: 250px;
+
   background: url("../images/bg.png");
   background-size: cover;
   font-size: 24px;
+
 }
+
 
 /* Include the padding and border in an element's total width and height */
 * {
@@ -45,6 +48,7 @@ ol li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
+
 ul li.checked {
   background: rgba(12, 95, 63, 0.521)(136, 136, 136, 0.521);
   color: rgba(13, 92, 49, 0.747);
@@ -54,8 +58,11 @@ ul li.checked {
   color:goldenrod;
 }
 
-/* Add a "checked" mark when clicked on */
-ol#todolist li.checked::before {
+
+/*Add a "checked" mark when clicked on */
+ul#todolist li.checked::before { 
+
+
   content: '';
   position: absolute;
   border-color: goldenrod;
@@ -79,6 +86,7 @@ ol#todolist li.checked::before {
 .close:hover {
   background-color: red;
   color: white;
+
 }
 
 /* Style the header */
@@ -137,6 +145,7 @@ input {
   height: fit-content;
   align-self: center;
   margin: 40px 400px;
+
   box-shadow:2px solid, green ;
   
 }
@@ -244,3 +253,4 @@ button {
   margin: 40px 400px;
   box-shadow:2px solid, green ;
 }
+
