@@ -45,7 +45,7 @@ ol li:hover {
 }
 
 /* When clicked on, add a background color and strike out text */
-ol li.checked {
+ul li.checked {
   background: rgba(12, 95, 63, 0.521)(136, 136, 136, 0.521);
   color: rgba(13, 92, 49, 0.747);
   text-decoration: line-through;
@@ -146,6 +146,7 @@ li input{
   padding: 0;
   margin:auto;
   float: left;
+  list-style-type: none;
 }
 table td{
   padding: 26px;
@@ -215,7 +216,7 @@ button {
 
 /*double check styling*/
 .fa-check-double{
-  height: 100px;
+  height: auto;
   color: teal;
   padding: 8px;
 }
@@ -223,8 +224,8 @@ button {
 .fa-trash{
   font-size:30px;
   color:red;
-  padding: 8px;
-  margin: 4px;
+  padding: 4px;
+  margin: 1px;
   float:right;
 }
 #todos {
