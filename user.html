@@ -15,48 +15,19 @@
     
 </head>
 <body>
-
+    <header class = "top-bar js-top-bar  _fixed top-bar">
+        <img src="assets/images/logoRetina.png" alt="" height="85">              
+    </header>
     <div class="container"> 
         <div class="tab">
+            <button class="tablink" onclick="opentab(event,'todoadd1')">create a new list</button>            
             <button class="tablink" onclick="opentab(event, 'tododone')">Earlier lists</button>
             <button class="tablink" onclick="opentab(event,'todos')">Active lists</button>
-            <button class="tablink" onclick="opentab(event,'todoadd1')">create a new list</button>
-
+            <button onclick="parent.location ='index.html'">Logout</button>
         </div>
-</div>
-        <div class="tabcontent" id="todos">
-        <div class="left">
-                <h2>House chores</h2>
-            <table id="todotable">
-                <tr><td id="mark" onclick="mark()"> 
-                    <input type="checkbox"></td>
-                    <td>washh the dog</td>
-                    <td  onclick="del('todo');"><i class="fa fa-trash"></i></td> 
-                </tr>
-                <tr><td> <input type="checkbox"></td>
-                    <td>dance</td>
-                    <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
-                 </tr>
-                <tr><td> <input type="checkbox"></td>
-                    <td>dance</td>
-                    <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
-                </tr>
-                <tr id="todo">
-                    <td> <input type="checkbox"></td>
-                    <td>dance</td>
-                    <td  onclick="del()"><i class="fa fa-trash" ></i></td>
-                </tr>
-                
-            </table>
-        </div>
-
-        </div>
-
-    </div>
-    <div class="panel">
-    <div class="tabcontent" id="todoadd1">
+        <div class="tabcontent" id="todoadd1">
+            <!-- <div class="panel"> -->
             <div id="todoadd1" class="header">
-                <img src="assets/images/logoRetina.png" height="80">
                 <input type="text" id="myInput" placeholder="Title...">
                 <span onclick="newElement()" class="addBtn">Add</span>
             </div>
@@ -65,14 +36,35 @@
                 
                 <li> Pick up Refreshments</li>
                 </ol>
-            
-                </div>
-                </div>
-        <!-- another to-do list -->
-        <!-- <button  onclick="show('todoadd2');">Create a new list</button> -->
-        
-        </div>
-        <div class="tabcontent" id="tododone">
+            <!-- </div> -->
+            </div>
+   
+            <div class="tabcontent" id="todos">
+                    <h2 >House chores</h2>   
+                <table id="todotable">
+                    <tr><td></td><td></td><td></td><td id="mark" onclick="mark()">Click to indicate list status</td></tr>
+                    <tr><td > 
+                        <input type="checkbox"></td>
+                        <td>washh the dog</td>
+                        <td  onclick="del('todo');"><i class="fa fa-trash"></i></td> 
+                    </tr>
+                    <tr><td> <input type="checkbox"></td>
+                        <td>Sweep the house</td>
+                        <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
+                        </tr>
+                    <tr><td> <input type="checkbox"></td>
+                        <td>Clean the fridge</td>
+                        <td  onclick="del('todo');"><i class="fa fa-trash" ></i></td>
+                    </tr>
+                    <tr id="todo">
+                        <td> <input type="checkbox"></td>
+                        <td>Feed the dog</td>
+                        <td  onclick="del()"><i class="fa fa-trash" ></i></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="tabcontent" id="tododone">
             <ul>
                 <li id='done1'><i class="fas fa-check-double"></i>Preparing dinner<i class="fa fa-trash" onclick="hide('done1');"> Delete list</i>
                     <ul>
@@ -98,8 +90,14 @@
                 
             </ul>
             </div>
-        <a href="index.html" style="float:right;"> Done</a>
-    </div>
+        
+    <!-- <div class="panel"> -->
 
+        <!-- another to-do list -->
+        <!-- <button  onclick="show('todoadd2');">Create a new list</button> -->
+        
+        <!-- </div> -->
+         </div>
+         
 </body>
 </html>
