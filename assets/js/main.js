@@ -116,7 +116,32 @@ function opentab(evt, tabName ){
   
 }
 
+// Create a to-do item when clicking on the "Add" button
+function addlistitem() {
+  var li = document.createElement("LI");
+  var inputValue = document.getElementById("listInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("What do you plan todo?");
+  } else {
+    document.getElementById("tl").appendChild(li);
+  }
+  document.getElementById("listInput").value = "";
 
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
 
 //add rows to table
 // var  table=document.getElementById('todolist');

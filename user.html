@@ -34,7 +34,12 @@
                 
                 <ol id="todolist">
                 
-                <li> Pick up Refreshments</li>
+                <li onclick="show('tl');"> Pick up Refreshments</li>
+                         
+                <ol id="tl">
+                    <li><input type="text" id="listInput" placeholder="to-do item...........">
+                        <span onclick="addlistitem()">add</span></li>
+                </ol>
                 </ol>
             <!-- </div> -->
             </div>
@@ -89,7 +94,7 @@
                         </ul> 
                 
             </ul>
-            </div>
+            </div>        
         
     <!-- <div class="panel"> -->
 
