@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  min-width: 250px;
+
+  background: url("../images/bg.png");
+  background-size: cover;
+  font-size: 24px;
+
+}
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ol li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgba(238, 238, 238, 0.527);
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ol li:nth-child(odd) {
+  background: #f9f9f94b;
+}
+
+/* Darker background-color on hover */
+ol li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+
+ul li.checked {
+  background: rgba(12, 95, 63, 0.521)(136, 136, 136, 0.521);
+  color: rgba(13, 92, 49, 0.747);
+  text-decoration: line-through;
+}
+#mark {
+  color:goldenrod;
+}
+
+
+/*Add a "checked" mark when clicked on */
+ul#todolist li.checked::before { 
+
+
+  content: '';
+  position: absolute;
+  border-color: goldenrod;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
+
+}
+
+/* Style the header */
+.header {
+  background-color:rgb(17, 94, 71);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background:goldenrod;
+  color: rgb(17, 94, 71);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+#todolist{
+  height: 400px;
+ 
+}
+#todoadd2{
+  display: none;
+}
+.panel{
+  width: 50%;
+  height: fit-content;
+  align-self: center;
+  margin: 40px 400px;
+
+  box-shadow:2px solid, green ;
+  
+}
+
+/*style list input */
+li input{
+  padding: 0;
+  margin:auto;
+  float: left;
+  list-style-type: none;
+}
+table td{
+  padding: 26px;
+  margin:10px;
+  align-content: center;
+}
+tr{
+  box-shadow: #f9f9f94b;
+}
+
+h2{
+  font-size: 30px;
+  color: green
+}
+.container{
+  background: rgba(245, 245, 245, 0.425);
+  display: flex;
+}
+.container.left{
+  width: 200px;
+
+  
+  
+}
+.container .right{
+  flex-grow: 1;
+}
+table tr:nth-child(odd) {
+  background: #f9f9f94b;
+}
+
+/* Darker background-color on hover */
+table tr:hover {
+  background: #ddd;
+}
+/* Set a style for all buttons */
+button {
+  background-color: rgb(17, 94, 71);
+  color:goldenrod;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+  font-style: bold;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+}
+
+/*double check styling*/
+.fa-check-double{
+  height: auto;
+  color: teal;
+  padding: 8px;
+}
+/* //delete fa styling */
+.fa-trash{
+  font-size:30px;
+  color:red;
+  padding: 4px;
+  margin: 1px;
+  float:right;
+}
+#todos {
+  
+  width: 50%;
+  height: fit-content;
+  align-self: center;
+  margin: 40px 400px;
+  box-shadow:2px solid, green ;
+}
+#tododone{
+  
+  width: 50%;
+  height: fit-content;
+  align-self: center;
+  margin: 40px 400px;
+  box-shadow:2px solid, green ;
+}
+

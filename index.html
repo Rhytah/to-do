@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TO-DO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,29 +10,23 @@
 </head>
 <head>
 
-
 </head>
 
 <body>
 <!--main navigation-->
 <header class = "top-bar js-top-bar  _fixed top-bar">
-            <nav> <logo></logo><img src="assets/images/todo.png" alt="" height="100"></logo>
-                    <ul style="float:right;">
-                        <li class ="active"><a>Home</a></li>
-                      
-                    </ul>
-                </nav>                
-
-
+             <img src="assets/images/logoRetina.png" alt="" height="85">              
 </header>
                 <div class="intro">
                 <h2>TO-DO</h2>
                 <h1>Manage your tasks</h1>
+                <p>My To-do list application provides users with the ability to create different to-do lists.
+                    <br> A single to-do list can have many to-do items. </p>
                 </div>
 
             <div class ="container" id="SignIn">
                     <div class="left">
-                        <img src="assets/images/clean.jpg">
+                        <img src="assets/images/todo.png">
                     </div>
                     <div class="right">                    
                     <div class="formBox">
@@ -42,18 +36,20 @@
                             <p>Password</p>
                             <input type="Password" name="" placeholder="******">
                             <br>
-                   
-                            <a href="user.html" id="login">Sign In</a>
+
+                            <a href="user.html">Sign In</a>
                             
                         </form>
                         </div>
                      </div>
                      <div>
-                            <button onclick="show('SignUp');" id="new">I'm New</button>
+                            <button onclick="show('SignUp'); hide('SignIn');" id="new" >I'm New</button>
                         </div>
             </div>
             <div class="container" id="SignUp">
-            <div class="left"><img src="assets/images/clean.jpg"></div>
+            <div class="left">
+                <img src="assets/images/todo.png">
+            </div>
             <div class="right">
                 <div class="formBox">
                 <form class="signup" method="POST">
@@ -73,6 +69,7 @@
                         <span class="error"></span>
                     </div>
                         <button type="submit" value="Signup Now" id="submit" onclick="singupAlert()">Signup</button>
+                        <button onclick="show('SignIn');">I am already registered</button>
                 
              </form>
              </div>
