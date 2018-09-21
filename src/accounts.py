@@ -1,21 +1,30 @@
-accounts = []#key is user, valu is pswd
-user={}
+user={"Rhy":"tah"}#key is user, valu is pswd
+accounts = [] #list of users
 
 
-def add_account(self,name,password):
 
-    self.name= input("Please enter your name: ")
-    self.password= input("Please enter secret word: ")
-    accounts.append(name)
-    accounts.append(password)
-    user={name:password}
-    user.update({accounts:[]})
-    print (accounts)
+def add_account(name,password):
+    print("USER SIGNUP")
+
+    name= str(input("Please enter your name: "))
+    password= str(input("Please enter secret word: "))
+    user=dict()
+
+    if name and password not in user:
+        user['name']=name
+        user['password']=password
+        accounts.append(user)
+        print("Account created")
+        print(accounts)
     
 
-def login(self,name,password):
-    self.name= name
-    self.password= password
-    if name == self.name and password==self.password:
-        print (True)
+  
+
+def login(name,password):
+    print("USER LOGIN")
+    name= str(input("Username: "))
+    password= str(input("Secret: "))
+    if name in user and user[name]==password:
+        return True
+    return False
             
