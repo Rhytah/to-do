@@ -2,6 +2,7 @@ body
 {
     margin: 0 auto;
     padding: 2px  8px;
+    font-size: 24px; 
     background-size: cover;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -18,14 +19,14 @@ body
 p
 {
     font: caption;
-    font-size: 16px;
+    font-size: 20px;
     font-weight:bold;
 }
 h1
 {
-    font-size: 18px;
+    font-size: 22px;
     font-size: sans-serif;
-    color: blue;
+    color:rgb(9, 10, 54);
     position: center;
 }
 
@@ -54,7 +55,7 @@ header nav ul
 {
     display: block;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 18px;
 }
 header nav ul li input, button
 {
@@ -82,7 +83,7 @@ a
 header nav li a
 {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: goldenrod;
     font-weight: bold;
     display: inherit;
@@ -102,13 +103,12 @@ button
 {
     font-family: sans-serif;
 
-    font-size: 18px;
+    font-size: 20px;
     color: goldenrod;
     font-weight: bold;
     height: 40px;
     text-align: center;
     width:100px;
-
     padding: 14px 16px;
     text-decoration: #aa66aa;
     background:#132c3f83;
@@ -141,7 +141,7 @@ h2
 {
     width:50%;
     height: 350px;
-    margin: 10px 100px;
+    margin: 2px 400px;
     border: 2px solid #ffffff69;
     box-shadow: 0 5px 10px rgba(0, 2, 0, .8);
     position: center;
@@ -186,7 +186,7 @@ form
     margin: auto;
     padding: 2px;
     font-weight:bold;
-    font-size: 16px;
+    font-size: 24px;
     color: #201420 ;
 }
 
@@ -194,7 +194,7 @@ form
 {
     margin-bottom: 30px;
     width: 90%;
-    height: fit-content;
+    height: 30px;
     font-size: 14px;
     border: none;
     border-bottom: 2px solid #262626;
@@ -272,4 +272,4 @@ form input
 
 }
 
-
+/*add responsiveness*/
