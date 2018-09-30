@@ -1,2 +1,6 @@
 __pycache__
 riri
+.coverage
+.pytest
+.coveragerc
+.vscode
