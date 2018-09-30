@@ -1,10 +1,17 @@
 language: python
 python:
   - "3.6"
+
+services:
+  - postgressql
+
 install:
   - pip install -r requirements.txt
-  - pip install python-coveralls
-  - pip install coverage
+  # - pip install python-coveralls
+  # - pip install coverage
+
+before_script:
+
   
 virtualenv:
 script: 
