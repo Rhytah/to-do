@@ -25,7 +25,7 @@ def delete_task(task):
             print ("You have deleted {}".format(task))
         
             print("These are remaining  {}".format(len(todo_list)))
-        print("Task not in current list")
+        # print("Task not in current list")
         
         
 
@@ -35,7 +35,7 @@ def mark_as_finished(task):
         if item['title'] == task:
             item['title']= task+("[Finished]")
             print("These are finished:{}".format(item))
-        print("Task not in current list")
+        # print("Task not in current list")
 
 
 def delete_all_tasks(task):
